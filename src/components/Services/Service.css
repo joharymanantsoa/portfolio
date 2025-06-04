@@ -58,3 +58,9 @@
     border-color: transparent;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  #image_container{
+    display: none;
+  }
+}
