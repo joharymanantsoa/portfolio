@@ -1,0 +1,105 @@
+.references-container .logo-item {
+  position: relative;
+  transition: all var(--ref-transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: var(--ref-border-radius);
+  box-shadow: var(--ref-shadow-base);
+  backdrop-filter: blur(2px);
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+
+.references-container .logo-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg, 
+    transparent, 
+    var(--ref-red-glow), 
+    transparent
+  );
+  transition: left 0.5s ease;
+  z-index: 1;
+}
+
+.references-container .logo-item:hover {
+  transform: scale(var(--ref-hover-scale));
+  box-shadow: 
+    0 8px 25px var(--ref-accent-red),
+    0 0 0 1px var(--ref-red-glow),
+    inset 0 1px 0 var(--ref-white-glow);
+  border-color: var(--ref-accent-red);
+  animation: none !important;
+}
+
+.references-container .logo-item:hover::before {
+  left: 100%;
+}
+
+.references-container .logo-item img {
+  position: relative;
+  z-index: 2;
+  transition: filter 0.3s ease;
+}
+
+.references-container .logo-item:hover img {
+  filter: 
+    brightness(1.1) 
+    contrast(1.1) 
+    drop-shadow(0 0 5px var(--ref-red-glow));
+}
+
+/* Animations */
+@keyframes ref-float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  25% { 
+    transform: translateY(-25px) rotate(3deg); 
+  }
+  50% { 
+    transform: translateY(-35px) rotate(0deg); 
+  }
+  75% { 
+    transform: translateY(-25px) rotate(-3deg); 
+  }
+}
+
+@keyframes ref-floatGlow {
+  0%, 100% { 
+    box-shadow: 0 6px 20px rgba(105, 7, 7, 0.4); 
+  }
+  50% { 
+    box-shadow: 0 12px 35px rgba(105, 7, 7, 0.6); 
+  }
+}
+
+@media (min-width: 768px) {
+  .references-container .logo-float-1 { 
+    animation: 
+      ref-float 4s ease-in-out infinite,
+      ref-floatGlow 4s ease-in-out infinite;
+  }
+  .references-container .logo-float-2 { 
+    animation: 
+      ref-float 4s ease-in-out infinite 0.8s,
+      ref-floatGlow 4s ease-in-out infinite 0.8s;
+  }
+  .references-container .logo-float-3 { 
+    animation: 
+      ref-float 4s ease-in-out infinite 1.6s,
+      ref-floatGlow 4s ease-in-out infinite 1.6s;
+  }
+  .references-container .logo-float-4 { 
+    animation: 
+      ref-float 4s ease-in-out infinite 2.4s,
+      ref-floatGlow 4s ease-in-out infinite 2.4s;
+  }
+}
+
+.references-container .logo-item {
+  will-change: transform, filter;
+}

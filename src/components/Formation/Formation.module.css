@@ -1,0 +1,41 @@
+.all{
+    background-color: #171C28;
+    color: white;
+    padding: 75px 15% 75px 15%;
+}
+
+#title{
+    color: #F91B1B;
+}
+
+.btnRef{
+    background-color: #F91B1B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 650;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.btnRef1{
+    background-color: transparent;
+    color: #F91B1B;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 650;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+@media (max-width: 1432px) {
+    #image {
+      display: none;
+    }
+  }

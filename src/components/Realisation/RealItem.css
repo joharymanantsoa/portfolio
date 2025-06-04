@@ -1,0 +1,31 @@
+.real-time {
+  animation: show 4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-timeline: view();
+  animation-range-start: cover 0%;
+  animation-range-end: cover 50%;
+  opacity: 1;
+}
+
+.real-item:nth-child(1),
+.real-item:nth-child(3) {
+  top: -10rem;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .real-item {
+    position: relative;
+    top: 0 !important;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    background: #000;
+  }
+  100% {
+    opacity: 1;
+    background: red;
+  }
+}

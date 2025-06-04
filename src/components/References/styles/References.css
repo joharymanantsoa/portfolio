@@ -1,0 +1,80 @@
+/* Styles du composant principal */
+.references-container .futuristic-title {
+  position: relative;
+  background: linear-gradient(
+    135deg, 
+    var(--ref-pure-white) 0%, 
+    var(--ref-accent-red) 30%, 
+    var(--ref-pure-white) 60%, 
+    var(--ref-accent-red) 100%
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: 
+    ref-gradientShift 4s ease-in-out infinite,
+    ref-textPulse 3s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 8px var(--ref-red-glow));
+  overflow: hidden;
+}
+
+.references-container .futuristic-title::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -100%;
+  width: 100%;
+  height: calc(100% + 4px);
+  background: linear-gradient(
+    90deg, 
+    transparent 0%, 
+    var(--ref-red-glow) 20%, 
+    var(--ref-white-glow) 50%, 
+    var(--ref-red-glow) 80%, 
+    transparent 100%
+  );
+  animation: ref-scanLine 5s linear infinite;
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.references-container .futuristic-title::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent 48%, var(--ref-red-glow) 50%, transparent 52%);
+  animation: ref-diagonalScan 6s linear infinite;
+  z-index: -1;
+}
+
+/* Keyframes avec préfixes pour éviter les conflits */
+@keyframes ref-gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  33% { background-position: 100% 0%; }
+  66% { background-position: 50% 100%; }
+}
+
+@keyframes ref-textPulse {
+  0% { 
+    filter: drop-shadow(0 0 5px var(--ref-red-glow)) brightness(1);
+  }
+  100% { 
+    filter: drop-shadow(0 0 15px var(--ref-white-glow)) brightness(1.1);
+  }
+}
+
+@keyframes ref-scanLine {
+  0% { transform: translateX(0%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateX(200%); opacity: 0; }
+}
+
+@keyframes ref-diagonalScan {
+  0% { transform: translateX(0%) translateY(-50%); }
+  100% { transform: translateX(200%) translateY(50%); }
+}

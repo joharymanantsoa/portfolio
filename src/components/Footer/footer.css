@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Police d'écriture pour le logo */
+.font-script {
+  font-family: 'Brush Script MT', cursive;
+}
+
+/* Couleurs personnalisées pour correspondre à l'image */
+.bg-\[\#0d111a\] {
+  background-color: #0d111a; /* Fond très sombre, presque noir */
+}
+
+.text-\[\#ff3838\] {
+  color: #ff3838; /* Rouge vif pour le numéro de téléphone */
+}
+
+/* Hover effects */
+.hover\:text-white:hover {
+  color: white;
+}
+
+.hover\:text-red-400:hover {
+  color: #f87171;
+}
+
+/* Ligne verticale entre les sections */
+/* @media (min-width: 768px) {
+  .md\:flex-row {
+    position: relative;
+  }
+  
+  .md\:flex-row > div:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80%;
+    width: 1px;
+    background-color: #2d3748;
+  }
+} */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

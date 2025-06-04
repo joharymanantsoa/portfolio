@@ -1,0 +1,60 @@
+.anim {
+  filter: drop-shadow(0 0 5px red);
+}
+
+.sary {
+  filter: drop-shadow(0 0 3px red)
+}
+
+.typing-container {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid black;
+  width: 0;
+  animation: typing 4s steps(14, end)forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 12ch
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typing {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid black;
+  width: 0;
+  animation: typ 4s steps(14, end) infinite, blink 0.7s step-end infinite;
+}
+
+@keyframes typ {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 20ch;
+    /* nombre de caractères */
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
