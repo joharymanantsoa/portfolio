@@ -2,7 +2,12 @@
 
 #root {
   margin: 0 auto;
+
+/*   overflow: hidden;
+  scroll-behavior: smooth; */
+
   overflow-x: hidden;
+
 }
 
 .logo {
@@ -43,5 +48,5 @@
 
 @font-face {
   font-family: 'Tomorrow';
-  src: url('../public/Tomorrow\ police/');
+  src: url('../Tomorrow-police/Tomorrow-Regular.ttf');
 }

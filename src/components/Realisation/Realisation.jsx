@@ -1,12 +1,16 @@
 import RealHead from './RealHead'
 import RealItem from './RealItem'
-import LogoCompany from '../../assets/logo-company.png'
 import { Spotlight } from '../ui/Spotlight'
+
+import besidesImage from '../../assets/brand/besides.png'
+import cyberIslandImage from '../../assets/brand/cyber-island.jpg'
+import yesMadagascarImage from '../../assets/brand/yes-madagascar.png'
+import youthOpportunitiesImage from '../../assets/brand/youth-opportunities.jpg'
 
 
 const RealisationData = [
     {
-        logo: LogoCompany,
+        logo: besidesImage,
         title: 'BSides Madagascar',
         subtitle: "Organisateur principal",
         created_at: 'Septembre 2024 - À PRÉSENT',
@@ -30,7 +34,7 @@ const RealisationData = [
         ]
     },
     {
-        logo: LogoCompany,
+        logo: cyberIslandImage,
         title: 'CyberIsland',
         subtitle: "Co-Founder",
         created_at: 'Juin 2024 - À PRÉSENT',
@@ -51,8 +55,8 @@ const RealisationData = [
         ]
     },
     {
-        logo: LogoCompany,
-        title: 'YAS Madagascar',
+        logo: yesMadagascarImage,
+        title: 'YES Madagascar',
         subtitle: "Founder / Président ",
         created_at: 'Septembre 2023 - À PRÉSENT ',
         description: " Une plateforme consacrée aux jeunes afin d’encourager le partage, l’entraide et surtout le travail en équipe par l’intermédiaire de conférence, événement et sensibilisation ",
@@ -72,7 +76,7 @@ const RealisationData = [
         ]
     },
     {
-        logo: LogoCompany,
+        logo: youthOpportunitiesImage,
         title: 'Youth Opportunities',
         subtitle: "Campus Ambassadeur",
         created_at: 'Mars 2023 – Décembre 2023',

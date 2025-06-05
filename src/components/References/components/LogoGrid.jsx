@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 export default function LogoGrid({ references }) {
   return (
-    <div className="references-container">
-      <div className="flex justify-center items-center py-10 gap-6 flex-wrap">
+    <div className="references-container flex justify-center px-4">
+      <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 place-items-center py-8 lg:gap-30 gap-10">
         {references.map((reference, index) => (
-          <figure 
-            key={reference.id} 
+          <figure
+            key={reference.id}
             className={`
               bg-gray-400 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow
               logo-item
