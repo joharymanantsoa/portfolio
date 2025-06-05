@@ -32,7 +32,7 @@ function Services() {
 
 
         </div>
-        <div className="flex-1 ">
+        <div className="flex-1 hidden md:block ">
           <img src={lock} alt="" className="w-150 h-150 object-cover animate-pulse anim" />
         </div>
       </div>
