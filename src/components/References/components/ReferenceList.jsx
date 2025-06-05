@@ -1,5 +1,6 @@
 import React from 'react';
 import ReferenceCard from './ReferenceCard';
+import './ReferenceCard.css'
 
 const ReferenceList = ({ references }) => {
   // Validation des données
@@ -12,46 +13,165 @@ const ReferenceList = ({ references }) => {
   }
 
   return (
-    <div className="references-container mt-22">
-      <div className=" mx-auto px-4">
-      <div className="grid  grid-cols-1 md:grid-cols-2 gap-4 aspect-square md:aspect-auto ">
-          {references.slice(0, 2).map((reference, index) => (
-            <ReferenceCard 
-              key={reference.id}
-              name={reference.name}
-              position={reference.position}
-              location={reference.location}
-              period={reference.period.display}
-              className={`reference-card-${index + 1}`}
-            />
-          ))}
+    <section className='mx-auto'>
+      <div className='cards flex flex-col lg:flex-row justify-center gap-4'>
+
+        <div className='carte '>
+          <div className='cartes front'>
+            <p>ACCÈS BANQUE</p>
+            <p className='pt-4'>Lead Ingénieur Cybersécurité</p>
+            <p className='pt-4'>Madagascar</p>
+            <p className='pt-4'>Mai 2024 - à présent</p>
+
+
+          </div>
+          <div className='cartes back'>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Pilotage et gestion de projets de sécurité
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Analyse et gestion des vulnérabilités
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Collaboration stratégique
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Leadership et management d'équipe
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Réponse aux incidents
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Innovation et optimisation des solutions
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+
+              Gestion des patchs
+            </p>
+          </div>
         </div>
-        <div className="grid items-center grid-cols-1 md:grid-cols-3 gap-4 aspect-square md:aspect-auto mt-4">
-          {references.slice(2, 4).map((reference, index) => (
-            <ReferenceCard 
-              key={reference.id}
-              name={reference.name}
-              position={reference.position}
-              location={reference.location}
-              period={reference.period.display}
-              className={`reference-card-${index + 1}`}
-            />
-          ))}
-            
-          {/* Carte CTA */}
-          <div className="reference-cta-card h-full">
-            <div className="border border-red-500 bg-gradient-to-br from-[#3c262b] to-[#2a1b1f] p-6 rounded-md flex flex-col items-center justify-center text-center h-full min-h-[160px] relative overflow-hidden">
-              <div className="relative z-10">
-                <p className="text-red-500 font-medium text-lg mb-2">Faites comme eux,</p>
-                <p className="text-red-500 font-medium text-lg">faites nous confiance</p>
-                <div className="mt-4 w-16 h-0.5 bg-red-500 mx-auto opacity-70"></div>
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500/10 to-transparent animate-pulse"></div>
-            </div>
+
+
+        <div className='carte '>
+          <div className='cartes front'>
+            <p>GROUPE AXIAN / PULSE</p>
+            <p className='pt-4'>Ingénieur en cybersécurité</p>
+            <p className='pt-4'>Madagascar</p>
+            <p className='pt-4'>Mai 2024 - à présent</p>
+          </div>
+          <div className='cartes back'>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+
+              Gestion et optimisation des solutions de sécurité
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+
+              Analyse et gestion des vulnérabilités (VAPT)
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+
+              Gestion des patchs management
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+
+              Renforcement systèmes / Hardening
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+
+              Réponse aux incidents
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Preuves de concept (POC)</p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Surveillance proactive des menaces
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+
+              Collaboration stratégique</p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Rapports et communication</p>
           </div>
         </div>
       </div>
-    </div>
+
+
+      <div className='cards flex mt-4 flex-col md:flex-row justify-center gap-4 w-full'>
+
+        <div className='carte '>
+          <div className='cartes front'>
+            <p>BANQUE BGFI</p>
+            <p className='pt-4'>Consultant Développeur</p>
+            <p className='pt-4'>Madagascar</p>
+            <p className='pt-4'>Mai 2024 - à présent</p>
+          </div>
+          <div className='cartes back'>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+
+              Développement de scripts et outils</p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+
+              Data Science</p>
+          </div>
+        </div>
+
+
+        <div className='carte '>
+          <div className='cartes front'>
+            <p>EASYTECH / BEWYS OUTSOURCING</p>
+            <p className='pt-4'>Lead Ingénieur Cybersécurité</p>
+            <p className='pt-4'>Madagascar</p>
+            <p className='pt-4'>Mai 2024 - à présent</p>
+          </div>
+          <div className='cartes back'>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Support utilisateur</p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Gestion des tickets</p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Monitoring réseau</p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Développement d'outils et de scripts</p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Gestion des firewalls</p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Installation et configuration de serveurs</p>
+          </div>
+        </div>
+
+        <div className='carte-desc '>
+          <div className='cartes front' id='card-desc'>
+            Faites comme eux,
+            <p>faites nous confiance</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
   );
 };
 

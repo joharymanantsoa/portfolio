@@ -2,8 +2,12 @@
 
 #root {
   margin: 0 auto;
-  overflow: hidden;
-  scroll-behavior: smooth;
+
+/*   overflow: hidden;
+  scroll-behavior: smooth; */
+
+  overflow-x: hidden;
+
 }
 
 .logo {
