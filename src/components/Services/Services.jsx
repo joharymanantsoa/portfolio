@@ -33,16 +33,9 @@ function Services() {
 
         </div>
 
-// <<<<<<< HEAD
-//         <div className="flex-1 hidden md:block ">
-
-        <div className="flex-1 " id="image_container">
-
-          <img src={lock} alt="" className="w-150 h-150 object-cover animate-pulse anim" />
-
         <div id='image_container' className="flex-1 ">
           <img src={lock} alt="" className="w-150 h-150 object-cover animate-pulse anim max-[1030px]:hidden" />
- 5830da2 (fix:footer,header,realisation import:fonts)
+ 
         </div>
       </div>
 
