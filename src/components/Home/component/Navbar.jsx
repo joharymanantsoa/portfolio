@@ -18,7 +18,9 @@ function Navbar() {
 
         <div className="flex items-center gap-3">
           <button className="text-sm font-bold border-2 border-red-600 text-red-600 px-4 py-2 rounded hover:bg-red-600 hover:text-white transition">
-              Contactez-moi
+            <a href="#footer">
+            Contactez-moi
+            </a>
           </button>
 
           <button

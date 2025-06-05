@@ -115,7 +115,6 @@ function Formation() {
               <span className="whitespace-nowrap">Avril 2023</span>
             </div>
           </div>
-          {/* <div className="flex-1 bg-[#F91B1B70] m-[20px] px-[20px] py-[10px] sm:w-[300px] md:w-[300px] lg:w-[320px] max-w-[320px] lg:ml-[90px] hover:cursor-pointer hover:shadow-[#F91B1B] hover:shadow-sm"> */}
           <div className={clsx(
             'flex-1 bg-[#F91B1B70] m-[20px] px-[20px] py-[10px] sm:w-[300px] md:w-[300px] lg:w-[320px] max-w-[320px] hover:cursor-pointer hover:shadow-[#F91B1B] hover:shadow-sm',
             {

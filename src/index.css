@@ -16,7 +16,9 @@
 a {
   text-decoration: inherit;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #171C28;
@@ -25,6 +27,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {

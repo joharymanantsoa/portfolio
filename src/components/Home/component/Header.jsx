@@ -4,7 +4,7 @@ function Header() {
   return (
     <>
 
-      <div className='min-h-screen mb-cover w-full gap-5 px-20 mt-15'>   
+      <div className='mb-cover w-full gap-5 px-20 mt-15 p-10'>   
 
         <div className='flex flex-col mb-cover container px-4 md:px-15 lg:flex-row items-center w-full'>
 
