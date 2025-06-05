@@ -2,10 +2,10 @@ import './footer.css'
 
 function Footer() {
     return (<>
-        <div id='footer' className='absolute w-full bg-[#171C28] h-[150px] z-[999]'>
+        <footer className="bg-[#101522] text-white relative pt-[100px]">
+        <div id='footer' className='absolute w-full bg-[#171C28] top-0 h-[150px] z-[999]'>
         </div>
-        <footer className="bg-[#101522] text-white py-8 px-6 pt-[100px]">
-            <div className='container mx-auto flex flex-col md:flex-row justify-between min-[768px]:pt-[200px]items-center'>
+            <div className='container py-9 mx-auto flex flex-col md:flex-row justify-between min-[768px]:pt-[200px]items-center'>
                 {/* Logo section */}
                 <div className='mb-6 md:mb-0'>
                     <h2 className='max-[1024px]:hidden text-3xl font-script text-gray-300'>Sarobidy</h2>
@@ -29,7 +29,7 @@ function Footer() {
                             <li><a href="#realisations" className="hover:text-red-600">Realisations</a></li>
                         </ul>
                     </div>
-                    <div className="text-sm text-gray-400">2025 tout droit réservé.</div>
+                    <div className="text-sm text-gray-400">© 2025 tout droit réservé.</div>
                 </div>
 
                 {/* Social and contact section */}
