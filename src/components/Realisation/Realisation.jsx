@@ -55,11 +55,7 @@ const RealisationData = [
         ]
     },
     {
-<<<<<<< HEAD
         logo: yesMadagascarImage,
-=======
-        logo: LogoCompany,
->>>>>>> 5830da2 (fix:footer,header,realisation import:fonts)
         title: 'YES Madagascar',
         subtitle: "Founder / Président ",
         created_at: 'Septembre 2023 - À PRÉSENT ',
