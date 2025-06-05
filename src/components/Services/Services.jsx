@@ -13,7 +13,7 @@ const serviceData = [
 ];
 function Services() {
   return (
-    <div className="container py-8 md:py-12 bg-[#171C28] text-white mx-auto px-4 md:px-8">
+    <div  id="services" className="container py-8 md:py-12 bg-[#171C28] text-white mx-auto px-4 md:px-8">
       <div className="flex flex-col  md:flex-row items-center gap-20 justify-center">
         <div className="flex-1">
           <h1 className="text-2xl font-bold mb-4 typing-container ">Mes services</h1>

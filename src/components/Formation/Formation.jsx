@@ -38,7 +38,7 @@ function Formation() {
     setIsCertification(false);
   }
   return (
-    <div className={styles.all}>
+    <div id="formations" className={styles.all}>
       <center>
         <h3 className="font-bold text-[30px]" id={styles.title}>
           FORMATION
