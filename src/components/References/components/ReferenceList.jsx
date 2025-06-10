@@ -18,6 +18,55 @@ const ReferenceList = ({ references }) => {
 
         <div className='carte '>
           <div className='cartes front'>
+            <p>BANQUE MONDIALE</p>
+            <p className='pt-4'>Consultant</p>
+            <p className='pt-4'>Whashigton, DC 20433</p>
+            <p className='pt-4'>Mai 2025 - à présent</p>
+
+
+          </div>
+          <div className='cartes back'>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Pilotage et gestion de projets de sécurité
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Analyse et gestion des vulnérabilités
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Collaboration stratégique
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Leadership et management d'équipe
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Réponse aux incidents
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Innovation et optimisation des solutions
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Gestion des patchs
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Mise en place de procédures de sécurité
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Politique de sécurité et stratégie nationale de cybersécurité
+            </p>
+          </div>
+        </div>
+
+        <div className='carte '>
+          <div className='cartes front'>
             <p>ACCÈS BANQUE</p>
             <p className='pt-4'>Lead Ingénieur Cybersécurité</p>
             <p className='pt-4'>Madagascar</p>
@@ -52,8 +101,11 @@ const ReferenceList = ({ references }) => {
             </p>
             <p className='flex gap-3 items-center'>
               <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
-
               Gestion des patchs
+            </p>
+            <p className='flex gap-3 items-center'>
+              <span className='text-red-600 p-1 w-2 h-2 grid content-center rounded-full text-center'>✔</span>
+              Audit et tests d'intrusion
             </p>
           </div>
         </div>
@@ -161,6 +213,7 @@ const ReferenceList = ({ references }) => {
               Installation et configuration de serveurs</p>
           </div>
         </div>
+
 
         <div className='carte-desc '>
           <div className='cartes front' id='card-desc'>
