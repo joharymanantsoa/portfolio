@@ -1,5 +1,13 @@
 import styles from "./Formation.module.css";
 import monImage from "../../assets/images/profil.png";
+import alphorm from "../../assets/formation-logos/alphorm.png"
+import apisec from "../../assets/formation-logos/apisec.png"
+import c3sai from "../../assets/formation-logos/c3sai.jfif"
+import esiee from "../../assets/formation-logos/esiee-it.jpeg"
+import esti from "../../assets/formation-logos/esti.png"
+import fortinet from "../../assets/formation-logos/fortinet.png"
+import itti from "../../assets/formation-logos/ITTI.png"
+import yali from "../../assets/formation-logos/yali.jfif"
 
 import React, { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
@@ -59,7 +67,10 @@ function Formation() {
         <div className="w-full sm:w-[350px] md:w-[350px] lg:w-[390px] flex-col sm:justify-center lg:justify-end justify-end min-[1024px]:mr-[-50px] align-baseline">
             {isCertification ? (<>
           <div className="flex-1 bg-[#F91B1B70] m-[20px] px-[20px] py-[10px] sm:w-[300px] md:w-[300px] lg:w-[320px] max-w-[320px] hover:cursor-pointer hover:shadow-[#F91B1B] hover:shadow-sm">
-            <h5 className="text-[18px] text-[#F91B1B]">Certificated Cybersecurity Analyst | C3SAI</h5>
+            <div className="flex">
+              <h5 className="text-[18px] text-[#F91B1B]">Certificated Cybersecurity Analyst | C3SAI</h5>
+              <img className="w-15 h-15" src={c3sai} alt="c3sai" />
+            </div>
             <p>Cyber Warfare Labs</p><br></br>
             <div className="flex justify-between w-full">
               <span className="text-[#F91B1B] whitespace-nowrap">Cambridge</span>
@@ -72,7 +83,10 @@ function Formation() {
               'ml-[-50px]': isLargeScreen,
             }
           )}>
-            <h5 className="text-[18px] text-[#F91B1B]">YALI REGIONAL LEADERSHIP CENTER</h5>
+            <div className="flex">
+              <h5 className="text-[18px] text-[#F91B1B]">YALI REGIONAL LEADERSHIP CENTER</h5>
+              <img className="w-15 h-15" src={yali} alt="yali" />
+            </div>
             <p>YALI RLC & USAID</p><br></br>
             <div className="flex justify-between w-full">
               <span className="text-[#F91B1B] whitespace-nowrap">Afrique de Sud</span>
@@ -80,7 +94,10 @@ function Formation() {
             </div>
           </div>
           <div className="flex-1 bg-[#F91B1B70] m-[20px] px-[20px] py-[10px] sm:w-[300px] md:w-[300px] lg:w-[320px] max-w-[320px] hover:cursor-pointer hover:shadow-[#F91B1B] hover:shadow-sm">
-            <h5 className="text-[18px] text-[#F91B1B]">Fortinet Certified Fundamentals in Cybersecurity</h5>
+            <div className="flex">
+              <h5 className="text-[18px] text-[#F91B1B]">Fortinet Certified Fundamentals in Cybersecurity</h5>
+              <img className="w-15 h-15" src={fortinet} alt="fortinet" />
+            </div>
             <p>Fortinet</p><br></br>
             <div className="flex justify-between w-full">
               <span className="text-[#F91B1B] whitespace-nowrap">Sunnyvale</span>
@@ -89,7 +106,10 @@ function Formation() {
           </div>
           </>):(<>
           <div className="flex-1 bg-[#F91B1B70] m-[20px] px-[20px] py-[10px] sm:w-[300px] md:w-[300px] lg:w-[320px] max-w-[320px] hover:cursor-pointer hover:shadow-[#F91B1B] hover:shadow-sm">
-            <h5 className="text-[18px] text-[#F91B1B]">ESIEE-IT Paris / ESTI Antanimena</h5>
+            <div className="flex">
+              <h5 className="text-[18px] text-[#F91B1B]">ESIEE-IT Paris / ESTI Antanimena</h5>
+              <img className="w-15 h-15" src={esiee} alt="esiee" />
+            </div>
             <p>MASTER en Infrastructure et Cybersécurité</p><br></br>
             <div className="flex justify-between w-full">
               <span className="text-[#F91B1B] whitespace-nowrap">Madagascar</span>
@@ -108,7 +128,10 @@ function Formation() {
         <div className="w-full sm:w-[350px] md:w-[350px] lg:w-[390px] flex-col justify-end align-baseline">
         {isCertification ? (<>
           <div className="flex-1 bg-[#f91b1b70] m-[20px] px-[20px] py-[10px] sm:w-[300px] max-[1023px]:mt-0 md:w-[300px] lg:w-[320px] max-w-[320px] hover:cursor-pointer hover:shadow-[#F91B1B] hover:shadow-sm">
-            <h5 className="text-[18px] text-[#F91B1B]">API Penetration Testing</h5>
+            <div className="flex">
+              <h5 className="text-[18px] text-[#F91B1B] pr-6">API Penetration Testing</h5>
+              <img className="w-15 h-15" src={apisec} alt="apisec" />
+            </div>
             <p>APISEC University</p><br></br>
             <div className="flex justify-between w-full">
               <span className="text-[#F91B1B] whitespace-nowrap">San Francisco</span>
@@ -121,7 +144,10 @@ function Formation() {
               'ml-[90px]':isLargeScreen,
             }
           )}>
-            <h5 className="text-[18px] text-[#F91B1B]">Certificate of Superior Level English C2</h5>
+            <div className="flex">
+              <h5 className="text-[18px] text-[#F91B1B]">Certificate of Superior Level English C2</h5>
+              <img className="w-15 h-15" src={itti} alt="itti" />
+            </div>
             <p>International Testing &Training institute</p><br></br>
             <div className="flex justify-between w-full">
               <span className="text-[#F91B1B] whitespace-nowrap">New York</span>
@@ -129,7 +155,10 @@ function Formation() {
             </div>
           </div>
           <div className="flex-1 bg-[#F91B1B70] m-[20px] px-[20px] py-[10px] sm:w-[300px] md:w-[300px] lg:w-[320px] max-w-[320px] hover:cursor-pointer hover:shadow-[#F91B1B] hover:shadow-sm">
-            <h5 className="text-[18px] text-[#F91B1B]">L'essentiel pour l'Analyste SOC</h5>
+            <div className="flex">
+              <h5 className="text-[18px] text-[#F91B1B]">L'essentiel pour l'Analyste SOC</h5>
+              <img className="w-15 h-15" src={alphorm} alt="alphorm" />
+            </div>
             <p>Alphorm</p><br></br>
             <div className="flex justify-between w-full">
               <span className="text-[#F91B1B] whitespace-nowrap">France</span>
@@ -138,7 +167,10 @@ function Formation() {
           </div>
           </>):(<>
             <div className="flex-1 bg-[#F91B1B70] m-[20px] px-[20px] py-[10px] sm:w-[300px] md:w-[300px] lg:w-[320px] max-w-[320px] hover:cursor-pointer hover:shadow-[#F91B1B] hover:shadow-sm">
-            <h5 className="text-[18px] text-[#F91B1B]">ESTI Antanimena</h5>
+            <div className="flex">
+              <h5 className="text-[18px] text-[#F91B1B] pr-10">ESTI Antanimena</h5>
+              <img className="w-15 h-15" src={esti} alt="esti" />
+            </div>
             <p>LICENSE en Réseaux et Systèmes</p><br></br>
             <div className="flex justify-between w-full">
               <span className="text-[#F91B1B] whitespace-nowrap">Madagascar</span>
