@@ -21,7 +21,7 @@ export const referencesData = [
     id: 2,
     name: "ACCES BANQUE",
     logo: {
-      src: "/public/logos/acces-banque.png",
+      src: "/logos/acces-banque.png",
       alt: "Logo Accès Banque",
       placeholder: "/logos/placeholder.png"
     },
@@ -39,7 +39,7 @@ export const referencesData = [
     id: 3,
     name: "GROUPE AXIAN / PULSE",
     logo: {
-      src: "/public/logos/axian.png",
+      src: "/logos/axian.png",
       alt: "Logo Groupe Axian",
       placeholder: "/logos/placeholder.png"
     },
@@ -57,7 +57,7 @@ export const referencesData = [
     id: 4,
     name: "BANQUE BGFI",
     logo: {
-      src: "/public/logos/bgfi.png",
+      src: "/logos/bgfi.png",
       alt: "Logo BGFI Bank",
       placeholder: "/logos/placeholder.png"
     },
@@ -75,7 +75,7 @@ export const referencesData = [
     id: 5,
     name: "EASYTECH / RHWS OUTSOURCING",
     logo: {
-      src: "/public/logos/bewys.png",
+      src: "/logos/bewys.png",
       alt: "Logo EastTech",
       placeholder: "/logos/placeholder.png"
     },
