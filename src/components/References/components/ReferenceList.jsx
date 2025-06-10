@@ -19,8 +19,8 @@ const ReferenceList = ({ references }) => {
         <div className='carte '>
           <div className='cartes front'>
             <p>BANQUE MONDIALE</p>
-            <p className='pt-4'>Consultant</p>
-            <p className='pt-4'>Whashigton, DC 20433</p>
+            <p className='pt-4'>Expert en Cybersécurité</p>
+            <p className='pt-4'>Madagascar</p>
             <p className='pt-4'>Mai 2025 - à présent</p>
 
 

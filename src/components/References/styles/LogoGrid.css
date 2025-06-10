@@ -53,6 +53,7 @@
 }
 
 /* Animations */
+
 @keyframes ref-float {
   0%, 100% { 
     transform: translateY(0px) rotate(0deg); 
@@ -77,28 +78,35 @@
   }
 }
 
+
 @media (min-width: 768px) {
   .references-container .logo-float-1 { 
     animation: 
-      ref-float 4s ease-in-out infinite,
-      ref-floatGlow 4s ease-in-out infinite;
+      ref-float 5s ease-in-out infinite,
+      ref-floatGlow 5s ease-in-out infinite;
   }
   .references-container .logo-float-2 { 
     animation: 
-      ref-float 4s ease-in-out infinite 0.8s,
-      ref-floatGlow 4s ease-in-out infinite 0.8s;
+      ref-float 5s ease-in-out infinite 1s,
+      ref-floatGlow 5s ease-in-out infinite 1s;
   }
   .references-container .logo-float-3 { 
     animation: 
-      ref-float 4s ease-in-out infinite 1.6s,
-      ref-floatGlow 4s ease-in-out infinite 1.6s;
+      ref-float 5s ease-in-out infinite 2s,
+      ref-floatGlow 5s ease-in-out infinite 2s;
   }
   .references-container .logo-float-4 { 
     animation: 
-      ref-float 4s ease-in-out infinite 2.4s,
-      ref-floatGlow 4s ease-in-out infinite 2.4s;
+      ref-float 5s ease-in-out infinite 3s,
+      ref-floatGlow 5s ease-in-out infinite 3s;
+  }
+  .references-container .logo-float-5 { 
+    animation: 
+      ref-float 5s ease-in-out infinite 4s,
+      ref-floatGlow 5s ease-in-out infinite 4s;
   }
 }
+
 
 .references-container .logo-item {
   will-change: transform, filter;

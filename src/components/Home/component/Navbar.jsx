@@ -6,7 +6,10 @@ function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-black  shadow z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <div className="text-xl font-bold text-red-600">Sarobidy</div>
+        <div className="flex items-center space-x-4">
+          <img src="../../../../public/profil-logo.png" alt="profil-logo" className="h-12 w-12" />
+          {/* <div className="text-xl font-bold text-red-600">Sarobidy</div> */}
+        </div>
 
         <ul className="hidden lg:flex space-x-6 text-white">
           <li><a href="#home" className="hover:text-red-600">Accueil</a></li>
