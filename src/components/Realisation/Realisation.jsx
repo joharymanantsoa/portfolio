@@ -4,7 +4,7 @@ import { Spotlight } from '../ui/Spotlight'
 
 import besidesImage from '../../assets/brand/besides.png'
 import cyberIslandImage from '../../assets/brand/cyber-island.jpg'
-import yesMadagascarImage from '../../assets/brand/yes-madagascar.png'
+import yeaMadagascarImage from '../../assets/brand/yea.jpeg'
 import youthOpportunitiesImage from '../../assets/brand/youth-opportunities.jpg'
 
 
@@ -55,8 +55,8 @@ const RealisationData = [
         ]
     },
     {
-        logo: yesMadagascarImage,
-        title: 'YES Madagascar',
+        logo: yeaMadagascarImage,
+        title: 'YEA Madagascar',
         subtitle: "Founder / Président ",
         created_at: 'Septembre 2023 - À PRÉSENT ',
         description: " Une plateforme consacrée aux jeunes afin d’encourager le partage, l’entraide et surtout le travail en équipe par l’intermédiaire de conférence, événement et sensibilisation ",
