@@ -1,14 +1,17 @@
 import React from "react";
 import ServiceItem from "./ServiceItem";
 import gadena from '../../assets/gadenat.png';
+import lock_PC from '../../assets/pc-lock.png';
 import cle from '../../assets/key.png';
 import './Service.css';
 import lock from '../../assets/lock1.png';
 import pro from '../../assets/vecteezy_modern-cybersecurity-technology-background-with-shield_24640619.png';
+
 const serviceData = [
-  { icon: gadena, title: "Cybersecurité Analyste", description: "En tant qu'analyste en cybersécurité, je surveille encontinu les systèmes pour détecter rapidement toute anomalie ou activité malveillante. Grâce à l'analyse approfondie des données et à l'utilisation d'outils spécialisés, j'identifie les failles potentielles       et contribue à anticiper et neutraliser les cybermenaces avant qu'elles n'affectent votre infrastructure" },
-  { icon: cle, title: "Professionnal", description: "En tant que professionnel de la cybersécurité,je conçois et implémente des stratégies intégrées,allant de l'analyse des vulnérabilités à la mise en placede dispositifs de sécurité avancés adaptés à vos besoins.Grâce à une approche proactive et une expertise terrain,je supervise l'ensemble des mesures de protectionpour assurer la résilience de vos infrastructuresface aux menaces actuelles et futures." },
-  { icon: pro, title: " Pentesting", description: "En tant que spécialiste du pentesting, je simule desattaques pour révéler les failles et identifier lesvulnérabilités potentielles dans vos systèmes.En combinant des outils automatisés à uneexpertise manuelle éprouvée, je propose desmesures concrètes et adaptées afin de renforcerefficacement la résilience de votre infrastructureface aux cybermenaces." },
+  { icon: gadena, title: "Cybersecurité Analyste", description: "En tant qu'analyste en cybersécurité, je surveille en continu les systèmes pour détecter rapidement toute anomalie ou activité malveillante. Grâce à l'analyse approfondie des données et à l'utilisation d'outils spécialisés, j'identifie les failles potentielles et contribue à anticiper et neutraliser les cybermenaces avant qu'elles n'affectent votre infrastructure" },
+  { icon: cle, title: "Professionnal", description: "En tant que professionnel de la cybersécurité, je conçois et implémente des stratégies intégrées, allant de l'analyse des vulnérabilités à la mise en place de dispositifs de sécurité avancés adaptés à vos besoins. Grâce à une approche proactive et une expertise terrain, je supervise l'ensemble des mesures de protection pour assurer la résilience de vos infrastructures face aux menaces actuelles et futures." },
+  { icon: pro, title: "Pentesting", description: "En tant que spécialiste du pentesting, je simule des attaques pour révéler les failles et identifier les vulnérabilités potentielles dans vos systèmes. En combinant des outils automatisés à une expertise manuelle éprouvée, je propose des mesures concrètes et adaptées afin de renforcer efficacement la résilience de votre infrastructure face aux cybermenaces." },
+  { icon: lock_PC, title: "Audit et mise en place d'outils de sécurité", description: "Je réalise des audits complets de votre infrastructure existante pour évaluer votre posture de sécurité actuelle. Fort de cette analyse, je conçois et déploie des solutions de sécurité adaptées : firewalls, systèmes de détection d'intrusion, antivirus d'entreprise, et outils de monitoring. Mon approche méthodique garantit une intégration harmonieuse des technologies de protection tout en optimisant les performances de vos systèmes." }
 
 ];
 function Services() {
