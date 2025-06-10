@@ -2,10 +2,10 @@ import './footer.css'
 
 function Footer() {
     return (<>
-        <div id='footer' className='absolute w-full bg-[#171C28] h-[150px] z-[999]'>
+        <footer className="bg-[#101522] text-white relative pt-[100px]">
+        <div id='footer' className='absolute w-full bg-[#171C28] top-0 h-[150px] z-[999]'>
         </div>
-        <footer className="bg-[#101522] text-white py-8 px-6 pt-[100px]">
-            <div className='container mx-auto flex flex-col md:flex-row justify-between min-[768px]:pt-[200px]items-center'>
+            <div className='container py-9 mx-auto flex flex-col md:flex-row justify-between min-[768px]:pt-[200px]items-center'>
                 {/* Logo section */}
                 <div className='mb-6 md:mb-0'>
                     <h2 className='max-[1024px]:hidden text-3xl font-script text-gray-300'>Sarobidy</h2>
@@ -29,7 +29,7 @@ function Footer() {
                             <li><a href="#realisations" className="hover:text-red-600">Realisations</a></li>
                         </ul>
                     </div>
-                    <div className="text-sm text-gray-400">2025 tout droit réservé.</div>
+                    <div className="text-sm text-gray-400">© 2025 tout droit réservé.</div>
                 </div>
 
                 {/* Social and contact section */}
@@ -55,19 +55,11 @@ function Footer() {
                                 </a>
 
                             </div>
-                            <div className='p-2 flex justify-start gap-2'>
-                                <a href="https://github.com/sarobidih1001" aria-label="GitHub" className="flex gap-1">
-                                    <svg className="w-6 h-6" fill="white" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
-                                    </svg>
-                                    <span>Sarobidy Andriamialy</span>
-                                </a>
-
-                            </div>
+                           
                         </div>
                     </div>
-                    <a href="mailto:sarobidihantonio@gmail.com" className='text-sm text-white hover:text-gray-300'>
-                    sarobidihantonio@gmail.com
+                    <a href="mailto:andrisarobidy@gmail.com" className='text-sm text-white hover:text-gray-300'>
+                    andrisarobidy@gmail.com
                     </a>
                     <a href="tel:+261346860026" className='text-[#ff3838] text-sm hover:text-red-400'>
                         +261 34 68 600 26
