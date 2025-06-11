@@ -23,10 +23,10 @@ function Footer() {
                         
                         <ul className="hidden lg:flex space-x-6 text-white">
                             <li><a href="#home" className="hover:text-red-600">Accueil</a></li>
-                            <li><a href="#references" className="hover:text-red-600">References</a></li>
+                            <li><a href="#references" className="hover:text-red-600">Références</a></li>
                             <li><a href="#services" className="hover:text-red-600">Services</a></li>
                             <li><a href="#formations" className="hover:text-red-600">Formations</a></li>
-                            <li><a href="#realisations" className="hover:text-red-600">Realisations</a></li>
+                            <li><a href="#realisations" className="hover:text-red-600">Réalisations</a></li>
                         </ul>
                     </div>
                     <div className="text-sm text-gray-400">© 2025 tout droit réservé.</div>

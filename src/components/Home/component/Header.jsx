@@ -12,8 +12,8 @@ function Header() {
             <h2 className='text-white text-5xl'>Je suis</h2>
             <h1 className='text-red-700 text-7xl font-bold'>Sarobidy <br /> ANDRIAMIALY</h1>
             <h2 className='text-white text-4xl'>Consultant en cybersécurité</h2>
-            <p className='text-red-200 mb-10-max-w-2xl my-4'>Passionné par le cybersécurité, je conçois et <br />
-              enforces des systèmes d'informations<br /> sûrs et résilients</p>
+            <p className='text-red-200 mb-10-max-w-2xl my-4'>Passionné par la cybersécurité, je conçois et <br />
+              enforce des systèmes d'informations<br /> sûrs et résilients</p>
             <div className="flex-1 transform md:translate-x-30  p-4">
               <h3 className='text-white text-3xl font-bold text-shadow-red-500 text-shadow-lg drop-shadow-2xl drop-shadow-red-500 animate-pulse'> +de 6 ans d'expérience</h3>
             </div>
